@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+        <title>Sistema de Sorteo</title>
+        <meta charset = "utf-8">
+        <link rel="icon" href="nen.ico">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<html>
+    <body>
+        <div id="particles-js"></div> 
+
+        <div id="contenedor">
+            <h1 class="title">SORTEO</h1>
+            <p class="instruccion">Elije la cantidad de participantes y de premios</p>
+
+            <!--PRIMER FORMULARIO-->
+            <form id="form" autocomplete="off" >
+                <input type="number" id="participantes" placeholder="Cantidad de participantes" required>
+                <input type="number" id="premios" placeholder="Cantidad de premios"required>
+                <div class="div-checkbox">
+                    <p class="text" title="Al marcar esta casilla indicas que quieres que un mismo participante pueda ganar más de un premio. Es decir, de haber 3 o más premios, el primer lugar puede también aparecer en tercer lugar. Si no se marca la casilla, entonces una misma persona jamás podrá aparecer más de una vez en los ganadores.">¿Quieres que se repitan los ganadores?: </p>
+                    <input type="checkbox" class="checkbox">
+                </div>
+                <button id="submit">Siguiente</button>
+                <div class="contenedor">
+                    <span class="mensaje"></span>
+                </div>
+                
+            </form>
+
+            <!--SEGUNDO FORMULARIO-->
+            <form id="form-participantes">
+                <div class="input">
+                    <!--Div para los inputs de los participantes-->
+                </div>
+                <div class="contenedor">
+                    <button class="form-participantes__button" hidden="true">Sortear</button>
+                </div>
+            </form>
+
+            <!--MOSTRAR GANADORES-->
+            <div class="mostrar-ganadores" hidden="true">
+                <div class="ganador" >
+                    <!--Div para poner los nombres de los ganadores-->
+                    <div class="ganador__div">
+                        <span class="before">1°</span>
+                        <div class="win1"><p class="ganador1"></p></div>  
+                    </div>     
+                </div>
+                <div class="ganadores-otros">
+                    <!--Div para poner los nombres de los ganadores-->
+                </div>
+            </div>
+            
+        </div>
+        <footer class="footer">
+            <div class="copy-container">
+                <p class="copy">Todos los derechos reservados - Copyright © 2022 by Alexis Berndt</p>
+            </div>
+        </footer>
+
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

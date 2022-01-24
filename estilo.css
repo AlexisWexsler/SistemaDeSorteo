@@ -1,0 +1,250 @@
+*{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+html{position: relative;}
+
+body{
+    background-color: #248;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+.contenedor
+{
+    display: flex;
+    justify-content: center;
+}
+
+#contenedor
+{
+    position: relative;
+    height: 64vh;
+    width: 90%;
+    margin: 100px auto;
+}
+.title
+{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.instruccion
+{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 0;
+
+}
+
+
+#form input, #submit
+{
+    display: block;
+    padding: 8px;
+    outline: none;
+    margin: 3px auto;
+    width: 50vw;
+    border-radius: 5px;
+    text-align: center;
+}
+#submit
+{
+    margin: 8px auto;
+}
+#submit:hover
+{
+    background-color: #ccc;
+}
+.div-checkbox
+{
+    display: grid;
+    grid-template-columns: max-content min-content;
+    gap: 5px;
+    justify-content: center;
+    color: #fff;
+}
+.text:hover
+{
+    cursor: help;
+    color: #aaa;
+}
+.text,.checkbox
+{
+    display: inline-block !important;
+    margin: 0 auto ;
+    width: max-content !important;
+}
+.checkbox
+{
+    margin: 3px auto !important;
+}
+.mensaje
+{
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    text-align: center;
+    color: #d66;
+    margin: auto;
+
+}
+
+.input
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.form-participantes__input,.form-participantes__button
+{
+    padding: 8px;
+    outline: none;
+    margin: 3px 0;
+    width: max-content;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-participantes__button
+{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 80px;
+}
+.form-participantes__button:hover
+{
+    background-color: #ccc;
+}
+.ganador__div
+{
+    position: relative;
+    height: 100px;
+    width: 400px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px auto;
+}
+.win1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: auto;
+}
+.before{
+    position: absolute;
+    color: #fff;
+    background-color: #FFF533;
+    clip-path: polygon(0 0, 0% 100%, 15% 0);
+    width: 100%;
+    height: 100%;
+    font-size:40px;
+    top: 0;
+    left: 0;
+}
+.win1 p
+{
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+}
+.ganadores-otros
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px auto;
+}
+.ganadores-otros__div
+{
+    position: relative;
+    height: 40px;
+    width: 200px;
+}
+
+.beforeothers{
+    color: #fff;
+    background-color: #268;
+    clip-path: polygon(0 0, 0% 100%, 30% 0);
+    width: 100%;
+    height: 100%;
+    font-size:15px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.winothers
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.winothers p
+{
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+}
+
+.copy-container
+{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.copy{font-size: 10px;}
+
+
+@media screen and (max-width:800px) {
+
+    #contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title{font-size: 40px;}
+    .instruccion{font-size: 25px;}
+
+}
+@media screen and (max-width:500) {
+
+    #contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title{font-size: 40px;}
+    .instruccion{font-size: 25px;}
+
+}
